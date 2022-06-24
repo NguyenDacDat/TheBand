@@ -1,0 +1,383 @@
+/* Reset CSS */
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* 1.Vị Trí
+   2.Kích Thước
+   3.Màu Sắc
+   4.Kiểu Dáng */
+
+/* 1.Làm từ ngoài vào trong
+   2.Làm từ trên xuống dưới
+   3.Tổng quan chi tiết
+ */
+ /* Common */
+.clear {
+    clear: both;
+}
+
+.text-white {
+    color: #fff !important;
+}
+.row{
+   margin-left: -8px;
+   margin-right: -8px; 
+}
+.col{
+    float: left;
+    padding-left:8px;
+    padding-right: 8px;
+}
+#main {
+
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 46px;
+    background-color: #000;
+    z-index: 1;
+}
+
+#nav {
+    display: inline-block;
+}
+
+#nav,
+.subnav {
+    list-style-type: none;
+}
+
+#nav>li {
+    display: inline-block;
+}
+
+#nav li {
+    position: relative;
+}
+
+#nav>li>a {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#nav li a {
+    padding: 0 24px;
+    line-height: 46px;
+    text-decoration: none;
+    display: block;
+}
+
+#nav li:hover .subnav {
+    display: block;
+}
+
+#nav .subnav {
+    display: none;
+    background-color: #fff;
+    position: absolute;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    min-width: 160px;
+    top: 100%;
+}
+
+#nav .subnav a {
+    color: #000;
+    padding: 0 12px;
+    line-height: 38px;
+}
+
+#nav .subnav li:hover a,
+#nav>li:hover>a {
+    color: #000;
+    background-color: #ccc;
+}
+
+#nav .nav-arrow-down {
+    font-size: 12px;
+}
+
+#header .search-btn {
+    float: right;
+    padding: 0 21px;
+}
+
+#header .search-btn:hover {
+    background-color: #f44336;
+    cursor: pointer;
+}
+
+#header .search-icon {
+    color: #fff;
+    font-size: 20px;
+    line-height: 46px;
+}
+
+#slider {
+    padding-top: 50%;
+    margin-top: 46px;
+    background: url('/assets/Img/Slider/chicago.jpg') top center / cover no-repeat;
+}
+
+#slider .text-content {
+    position: absolute;
+    bottom: 47px;
+    color: #fff;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+#slider .text-heading {
+    font-weight: 500;
+    font-size: 24px;
+}
+
+#slider .text-description {
+    font-size: 15px;
+    margin-top: 25px;
+    ;
+}
+
+#content {
+    
+}
+
+#content .content-section {
+    width: 800px;
+    padding: 64px 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#content .section-heading {
+    font-size: 30px;
+    text-align: center;
+    font-weight: 500%;
+    letter-spacing: 4px;
+}
+
+#content .section-sub-heading {
+    font-size: 15px;
+    text-align: center;
+    margin-top: 25px;
+    font-style: italic;
+    opacity: 0.7;
+}
+
+#content .about-text {
+    margin-top: 25px;
+    font-size: 15px;
+    text-align: justify;
+    line-height: 1.4;
+}
+
+#content .member-list {
+    margin-top: 48px;
+}
+
+#content .member-name {
+    font-size: 15px;
+}
+
+#content .member-iteam {
+    float: left;
+    width: 33.33333%;
+    text-align: center;
+}
+
+#content .member-img {
+    width: 154px;
+    margin-top: 15px;
+    border-radius: 4px;
+}
+
+/* Tour Section */
+.tour-section {
+   background-color: #000;
+}
+.tickets-list{
+    background-color: #fff;
+    margin-top: 40px;
+}
+.tickets-list li{
+    font-size: 15px;
+    padding:11px 16px;
+    border-bottom: 1px solid #ddd;
+    color: #757575;
+}
+.tickets-list .sold-out{
+    background-color: #f44336;
+    color:#fff;
+    padding: 3px 4px;
+    margin-left: 16px;
+}
+.tickets-list .quantity {
+    float:right;
+    width:24px;
+    height:24px;
+    background-color: #000;
+    color:#fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height:24px; 
+    margin-top: -3px;
+}
+/* Places */
+.places-list{
+    /* margin-top: 32px;
+    margin-left: -8px;
+    margin-right:-8px; */
+    margin: 32px -8px;
+    padding-bottom: 48px;
+}
+.place-item{
+    float:left;
+    width: 33.33333%;
+    padding: 0 8px;
+}
+.place-img{
+    width: 100%;    
+    display: block;
+}
+.place-img:hover{
+    opacity: 0.6;
+}
+.place-body{
+    padding: 16px;
+    font-size:15px;
+    background-color: #fff;
+}
+.place-heading{
+    font-size: 15px;
+    font-weight: 600px;
+}
+.place-time{
+    margin-top:15px;  
+    color:#757575;
+}
+.place-desc{
+    margin-top:15px;  
+}
+.place-buy-btn{
+    color:#fff;
+    background-color: #000;
+    text-decoration: none;
+    padding: 11px 16px;
+    display:inline-block;
+    margin-top: 15px;
+}
+.place-buy-btn:hover{
+    color:#000;
+    background-color:#ccc;  
+}
+
+/* Footer Section */
+#footer {
+    
+}
+/* Bật Lên */
+.modal{
+    position: fixed;
+    top:0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background:rgba(0,0,0,0.4);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    display:none;
+}
+.modal.open{
+    display:flex;
+}
+.modal-container {
+    position: relative;
+    background: #ffff;
+    max-width: calc(100% - 32px);
+    width: 900px;
+    min-height: 200px;
+    animation:modalFadeIn ease .5s;
+}
+.modal-header {
+    background: #009688;
+    height:130px;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    font-size:30px;
+    color:#fff;
+}
+.modal-heading-icon{
+    margin-right:16px;
+}
+.modal-close:hover{
+    opacity:1;
+}
+.modal-close{
+    position:absolute;
+    right:0;
+    top:0;
+    color:#fff;
+    padding:12px;
+    cursor: pointer;
+    opacity: 0.8;
+}
+.modal-body {
+    padding: 16px;
+}
+.modal-label {
+    display: block;
+    font-size: 15px;
+    margin-top: 12px;
+    
+}
+.modal-input {
+    border: 1px solid #ccc;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+#buy-tickets {
+    background: #009688;
+    border: none;
+    width: 100%;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 18px;
+    cursor: pointer;
+}
+#buy-tickets:hover{
+    opacity: 0.9;
+}
+.modal-footer {
+    padding:16px;
+    text-align: right;
+}
+.modal-footer a{
+    color: #2196F3;
+}
+@keyframes modalFadeIn {
+    /* Từ Đâu */
+    from{
+        opacity: 0;
+        transform: translateY(-140px);
+    }
+    /* Đến Đâu */
+    to
+    {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
